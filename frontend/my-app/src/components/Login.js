@@ -4,7 +4,6 @@ import '../css/Login.css'
 function Login() {
   return (
     <>
-      <p>Hello World</p>
       <div className="form">
           <h1>Login</h1>
           <form>
