@@ -1,0 +1,50 @@
+.rightbar{
+    flex: 3;
+    background-color: rgb(31, 31, 31);
+    color: white;
+    
+}
+
+.rightbarContainer {
+    padding: 12px;
+    width: 100%;
+    border-radius: 12px;
+    background-color: rgb(46, 46, 46);
+    margin: 34px 0;
+    height: 15%;
+    
+}
+
+.sponsorHeader {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.sponsorBody {
+    margin: 24px 0
+}
+
+.sponsorImg {
+    max-height: 550px;
+    object-fit: contain;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.sponsorName {
+    color: gray;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.sponsorFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sponsorUrl {
+    display: flex;
+    text-align: center;
+}

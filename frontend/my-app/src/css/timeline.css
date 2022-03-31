@@ -1,0 +1,9 @@
+.timeline{
+    flex: 6;
+    background-color: rgb(31, 31, 31);
+    color: white;
+}
+
+.timelineContainer {
+    padding: 24px;
+}
