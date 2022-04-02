@@ -15,8 +15,60 @@
     color: white;
 }
 
+.postUserImg {
+    height: 34px;
+    width: 34px;
+    border: 55%;
+    object-fit: cover;
+    margin-right: 16px;
+}
+
 .leftbarItem {
     margin-bottom: 25px;
     display: flex;
     align-items: center;
+    font-size: 18px;
+}
+
+.leftbarIcon {
+    margin-right: 18px;
+}
+
+.leftbarHr {
+    color: gray;
+    font-weight: 500;
+    margin: 24px 0;
+}
+
+.gamesHeader {
+    font-size: 30px;
+    color: gray;
+    font-weight: 500;
+}
+
+.leftbarGames {
+    list-style: none;
+    padding: 0;
+    /* margin: 0%; */
+    color: white;
+    margin-top: 25px;
+}
+
+.leftbarGame {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.leftbarGameImg {
+    margin-right: 18px;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.gameName {
+    font-size: 22px;
 }

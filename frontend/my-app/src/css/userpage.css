@@ -1,0 +1,8 @@
+.userPageImg {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}

@@ -17,13 +17,13 @@
 .postName {
     font-size: 18px;
     font-weight: 500;
-    margin-left: 20px;
+    margin-left: 5px;
 }
 
 .postUserImg {
-    height: 34px;
-    width: 34px;
-    border: 55%;
+    height: 60px;
+    width: 60px;
+    border-radius: 55px;
     object-fit: cover;
 }
 
@@ -58,6 +58,7 @@
     color: gray;
     font-weight: 500;
     border-bottom: 1px solid gray;
+    font-size: 20px;
 }
 
 .postComment {
@@ -65,4 +66,5 @@
     color: gray;
     border-bottom: 1px solid gray;
     font-weight: 500;
+    font-size: 20px;
 }

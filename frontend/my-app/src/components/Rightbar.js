@@ -1,7 +1,11 @@
 import React from 'react'
 import '../css/rightbar.css'
+import { RightbarFriends } from './RightbarFriends'
+import { Users } from '../data.js'
+
 
 const Rightbar = () => {
+  
   return (
     <div className='rightbar'>
         <div className="rightbarContainer">
@@ -13,6 +17,11 @@ const Rightbar = () => {
           </div>
         </div>
         <hr className='rightbarHr' />
+        <span className='rightbarFriendsHeader'>Friends</span>
+        {Users.map(u => (
+              <RightbarFriends key={u.id} user={u} />
+            ))}
+
     </div>
   )
 }

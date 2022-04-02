@@ -6,7 +6,7 @@ const SharePost = () => {
     <div className='sharePost'>
         <div className='sharePostContainer'>
             <div className="shareHeader">
-                <img className='sharePostImg' src="" alt="" />
+                <img className='sharePostImg' src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/1024px-No_image_available.svg.png" alt="" />
                 <input placeholder="What's on your mind, Junior?" className='shareInput' />
             </div>
             <hr className='hr' />
