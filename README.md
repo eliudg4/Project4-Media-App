@@ -1,5 +1,5 @@
-our project idea
-A social media app where one can share posts and directly message friends. Similar to Instagram and other apps.
+###Project Idea###
+A social media app where users can register, login, and logout as they please. The app is mostly based off of Facebook. User can create posts and see all of the posts they have posted in the past.
 
 Your tech stack (frontend, backend, database)
 Bootstrap
