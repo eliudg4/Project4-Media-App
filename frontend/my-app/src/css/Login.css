@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(31, 31, 31);
+}
+
 button,
 input {
   border: none;
@@ -8,7 +12,11 @@ button {
   background-color: #1e90ff;
   color: #ffffff;
   padding: 0.75rem 1rem;
-  transition: box-shadow 0.3s ease-in, background-color 0.3s ease-in;
+  transition: box-shadow 0.3s ease-in, background-color 0.3s 
+  ease-in;
+  margin: 15px;
+  display: flex;
+  align-self: center;
 }
 
 button + button {

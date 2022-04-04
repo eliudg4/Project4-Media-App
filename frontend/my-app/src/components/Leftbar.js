@@ -1,15 +1,18 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import '../css/leftbar.css'
 import { Person, Message, Bookmark, Store, Today  } from '@mui/icons-material'
+import { SessionContext } from '../context/SessionContext'
 
 const Leftbar = () => {
+
+    const {user} = useContext(SessionContext)
   return (
     <div className='leftbar'>
         <div className='leftbarContainer'>
             <ul className="leftbarLists">
                 <li className="leftbarItem">
                     <img className="postUserImg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/1024px-No_image_available.svg.png" alt="" />
-                    <span>Junior Guzman</span>
+                    <span>{user.username}</span>
                 </li>
                 <li className="leftbarItem">
                     <Person className='leftbarIcon' />

@@ -4,12 +4,10 @@
     height: 180px;
     background-color: rgb(46, 46, 46);
     color: white;
+    margin-bottom: 100px;
 
 }
 
-.sharePostContainer {
-    padding: 12px;
-}
 
 .sharePostImg {
     object-fit: cover;
@@ -29,7 +27,6 @@
     border: none;
     border-radius: 32px;
     padding-left: 10px;
-    cursor: pointer;
     background-color: rgb(75, 75, 75);
     color: rgb(255, 255, 255);
     margin-left: 20px;
@@ -37,8 +34,8 @@
 
 .option {
     margin-right: 12px;
-    align-items: center;
-    display: flex;
+    align-items: center; 
+     display: flex;
     cursor: pointer;
 }
 
@@ -49,6 +46,7 @@
     cursor: pointer;
     font-weight: 500;
     font-size: 18px;
+    color: white;
 }
 
 .options {
@@ -66,4 +64,5 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: rgb(46, 46, 46);
 }

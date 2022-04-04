@@ -5,24 +5,18 @@ const User = require('../models/User')
 
 router.post('/register', async (req, res, next) => {
     try {
-            const desiredUsername = req.body.username
-            const desiredEmail = req.body.email
-            const userExists = await User.findOne({ username: desiredUsername, email: desiredEmail})
-            if(userExists) {
-                res.send('Username already taken')
-            } else {
-                // Encrypting password
-                const salt = bcrypt.genSaltSync(10)
-                const hashedPassword = bcrypt.hashSync(req.body.password, salt)
-                req.body.password = hashedPassword
-                console.log(req.body)
-                const createdUser = await User.create(req.body)
-                console.log(createdUser)
-                res.send('Check your terminal')
+        const salt = await bcrypt.genSalt(10)
+        const hashedPassword = await bcrypt.hash(req.body.password, salt)
 
-            }
-        }
-     catch (err) {
+        const newUser = new User({
+            email: req.body.email,
+            username: req.body.username,
+            password: hashedPassword
+        })
+
+        const user = await newUser.save()
+        res.status(200).json(user)
+    } catch(err) {
         next(err)
     }
 })
@@ -30,18 +24,12 @@ router.post('/register', async (req, res, next) => {
 router.post('/login', async (req, res, next) => {
     try {
         const userToLogin = await User.findOne({
-            email: req.body.email
-        })
-        if(userToLogin) {
-            const validPassword = bcrypt.compareSync(req.body.password, userToLogin.password)
-            if(validPassword) {
-                res.send('User is logged in')
-            } else {
-                res.redirect('/session/login')
-            }
-        } else {
-            res.redirect('/session/login')
-        }
+            email: req.body.email })
+            !userToLogin && res.status(404).json("Incorrect email please try again.")
+            
+        const validPassword = await bcrypt.compare(req.body.password, userToLogin.password)
+
+        res.status(200).json(userToLogin)
     } catch (err) {
         next (err)
     }

@@ -19,7 +19,7 @@
     border-radius: 12px;
     background-color: rgb(46, 46, 46);
     margin: 34px 0;
-    height: 15%;
+    /* height: 15%; */
     
 }
 
@@ -30,14 +30,15 @@
 }
 
 .sponsorBody {
-    margin: 24px 0
+    margin: 24px 0;
 }
 
 .sponsorImg {
-    max-height: 550px;
+    max-height: 250px;
     object-fit: contain;
     margin-top: 20px;
     width: 100%;
+    
 }
 
 .sponsorName {

@@ -7,20 +7,15 @@ const userSchema = new mongoose.Schema ({
     },
     email: {
         type:String,
-        require: true,
-        unique: true
+        require: true
     },
     username: {
         type:String,
-        require: true,
-        unique: true,
-        min: 5,
-        max: 30
+        require: true
     },
     password: {
         type: String,
         require: true,
-        min: 8
     },
     profilePic: {
         type: String,
@@ -31,7 +26,7 @@ const userSchema = new mongoose.Schema ({
         default: []
     },
 },
-    // {timestamps: true}
+    {timestamps: true}
 )
 
 const User = mongoose.model('User', userSchema)

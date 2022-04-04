@@ -10,7 +10,7 @@ const UserPage = () => {
         <Navi />
         <div className="homeUserPage">
             <UserPageHeader />
-            <Timeline />
+            <Timeline username="junior"/>
             {/* <Rightbar /> */}
         </div>
     </div>
