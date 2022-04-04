@@ -30,11 +30,11 @@ Express
 Node.JS
 
 ### User Stories
-As a user I want to be able to post pictures
-As a user I want to be to message friends
-As a user I want to be to like and comment on other posts
+- As a user I want to be able to post pictures
+- As a user I want to be to message friends
+- As a user I want to be to like and comment on other posts
 
 ### Stretch Goals
-As a user I want to be able to login
-As a user I want to be able to register
-As a user I want to be able to be-friend and unfriend people
+- As a user I want to be able to login
+- As a user I want to be able to register
+- As a user I want to be able to be-friend and unfriend people
