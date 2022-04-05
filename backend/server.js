@@ -21,11 +21,11 @@ app.use(express.urlencoded({extended: true}))
 app.use(bodyParser.json());
 app.use(express.json())
 
-app.use(session({
-    secret: process.env.SESSION_SECRET,
-    resave: false,
-    saveUninitialized: false
-}))
+// app.use(session({
+//     secret: process.env.SESSION_SECRET,
+//     resave: false,
+//     saveUninitialized: false
+// }))
 
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {

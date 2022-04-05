@@ -30,7 +30,7 @@ const SharePost = () => {
 
         try {
             await axios.post('http://localhost:4000/posts', post)
-            window.location.reload()
+            // window.location.reload()
         } catch(err) {
 
         }
